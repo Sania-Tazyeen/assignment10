@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Js Tutorial</title>
+</head>
+<body>
+
+	<!--Assignment opertaors-->
+
+	<h1>JavaScript Opeartors</h1>
+	<p>x=10 and y=5, calculate x=y;</p>
+	<p id="demo"></p>
+<script type="text/javascript">
+	let x=10;
+	let y=5;
+	x=y;
+	document.getElementById("demo").innerHTML=x;
+
+</script>
+<!--String Operators-->
+
+<h2>String Operators</h2>
+<p>My Full Name is</p>
+<p id ="name"></p>
+<script type="text/javascript">
+	let text1 ="Sayyada";
+	let text2 ="Sania";
+	let text3 ="Tazyeen";
+	let text4 = text1+ text2 + text3;
+	document.getElementById("name").innerHTML=text4;
+</script>
+
+<!--Comparison Operators-->
+<h2>Comparison operators</h2>
+
+<p>Assign 5 to x, and display the value of the comparison (x >= 8).</p>
+
+<p id="demo"></p>
+
+<script>
+let n = 5;
+document.getElementById("demo").innerHTML = (n >= 8);
+</script>
+
+
+<!--Conditional ternary operator-->
+<p>Input your age and click the button:</p>
+
+<input id="age" value="18">
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo1"></p>
+
+<script>
+function myFunction() {
+  let age, voteable;
+  age = document.getElementById("age").value;
+  voteable = (age < 18) ? "Too young":"Old enough";
+  document.getElementById("demo1").innerHTML = voteable + " to vote.";
+}
+</script>
+
+<!--logical operators-->
+
+<h2>logical operators</h2>
+
+<p>The AND operator (&&) returns true if both expressions are true, otherwise it returns false:</p>
+
+<p id="example"></p>
+
+<script>
+let a = 8;
+let b = 3;
+
+document.getElementById("example").innerHTML =(a < 10 && b > 1) + "<br>" +(a < 10 && b < 1);
+</script>
+
+<!--typeof operators-->
+<h2>Typeof operators</h2>
+
+
+<p>The typeof operator returns the type of a variable, object, function or expression:</p>
+
+<p id="demo2"></p>
+
+<script>
+document.getElementById("demo2").innerHTML = 
+typeof "John" + "<br>" +
+typeof 3.14 + "<br>" +
+typeof NaN + "<br>" +
+typeof false + "<br>" +
+typeof [1, 2, 3, 4] + "<br>" +
+typeof {name:'John', age:34} + "<br>" +
+typeof new Date() + "<br>" +
+typeof function () {} + "<br>" +
+typeof myCar + "<br>" +
+typeof null;
+</script>
+
+
+<!--Javascript datatypes-->
+
+<h1>datatypes</h1>
+<p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</p>
+
+<p id="demo3"></p>
+
+<script>
+let q;         // Now x is undefined
+q = 5;         // Now x is a Number
+q = "Sania";    // Now x is a String
+
+document.getElementById("demo3").innerHTML = x;
+</script>
+
+<!--quotes-->
+<h2>Quotes</h2>
+
+<p>Strings are written with quotes. You can use single or double quotes:</p>
+
+<p id="demo4"></p>
+
+<script>
+let carName1 = "Sayyada Sania 65";
+let carName2 = 'Mohammed 65 Muqtadir';
+
+document.getElementById("demo4").innerHTML =
+carName1 + "<br>" + 
+carName2; 
+</script>
+
+
+<!--decimlas-->
+
+<h2>decimals</h2>
+
+<p>Numbers can be written with, or without decimals:</p>
+
+<p id="demo5"></p>
+
+<script>
+let x1 = 34.00;
+let x2 = 34;
+let x3 = 3.14;
+
+document.getElementById("demo5").innerHTML =
+x1 + "<br>" + x2 + "<br>" + x3;
+</script>
+
+<!--exponential-->
+
+<h2>exponential</h2>
+
+<p>Extra large or extra small numbers can be written with scientific (exponential) notation:</p>
+
+<p id="demo6"></p>
+
+<script>
+let p = 123e8;
+let z = 123e-2;
+
+document.getElementById("demo6").innerHTML =p+ "<br>" + z;
+</script>
+
+
+<!--Boolean-->
+<h2>Boolean</h2>
+<p>Booleans can have two values: true or false:</p>
+
+<p id="demo7"></p>
+
+<script>
+let d= 6;
+let e = 6;
+let f = 8;
+
+document.getElementById("demo7").innerHTML =
+(d == e) + "<br>" + (d == f);
+</script>
+
+
+<!--Arrays-->
+
+<h2>JavaScript Arrays</h2>
+
+<p>Array indexes are zero-based, which means the first item is [0].</p>
+
+<p id="demo8"></p>
+
+<script>
+const cars = ["Nissan","Volvo","BMW"];
+
+document.getElementById("demo8").innerHTML = cars[2];
+</script>
+
+<h2>JavaScript Objects</h2>
+
+<p id="demo9"></p>
+
+<script>
+const person = {
+  firstName : "Sayyada",
+  lastName  : "Sania",
+  age     : 26,
+  eyeColor  : "black"
+};
+delete person.age;
+
+document.getElementById("demo9").innerHTML =person.firstName + " is " + person.age + " years old."; 
+</script>
+
+
+</body>
+</html>
